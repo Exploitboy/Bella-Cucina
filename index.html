@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Cucina | Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bella Cucina</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#chefs" class="nav-link">Chefs</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button class="btn-primary nav-btn">Reserve Table</button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Authentic Italian Cuisine</h1>
+                <p class="hero-subtitle">Experience the taste of Italy with our handcrafted dishes made from traditional recipes passed down through generations.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">View Menu</button>
+                    <button class="btn-secondary">Book a Table</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Menu Items</p>
+                </div>
+                <div class="stat">
+                    <h3>5k+</h3>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card card-1">
+                <img src="images/bruschetta.jpg" alt="Pasta Dish">
+                <div class="card-content">
+                    <h4>Fresh Pasta</h4>
+                    <p>Made Daily</p>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <img src="images/antipasto.jpeg" alt="Pizza Dish">
+                <div class="card-content">
+                    <h4>Wood Fire Pizza</h4>
+                    <p>Authentic Taste</p>
+                </div>
+            </div>
+            <div class="floating-card card-3">
+                <img src="images/lasagna.jpg" alt="Dessert">
+                <div class="card-content">
+                    <h4>Italian Desserts</h4>
+                    <p>Sweet Perfection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="section-subtitle">Traditional recipes meet modern elegance</p>
+                    <p>Founded in 2008 by the Rossi family, Bella Cucina brings the authentic flavors of Southern Italy to your table. Our chefs use only the finest ingredients, imported directly from Italy, to create dishes that tell a story of tradition and passion.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Locally sourced and imported from Italy</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>Traditional Recipes</h4>
+                                <p>Family recipes passed through generations</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <div>
+                                <h4>Fine Wines</h4>
+                                <p>Curated selection of Italian wines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Restaurant Interior">
+                    <div class="experience-badge">
+                        <span>15+ Years</span>
+                        <p>Of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Crafted with passion, served with love</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="pizza">Pizza</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/bruschetta.jpg" alt="Bruschetta">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Bruschetta Classica</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Toasted bread topped with fresh tomatoes, basil, and extra virgin olive oil</p>
+                        <div class="item-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Gluten-Free Option</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/antipasto.jpeg" alt="Antipasto">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Antipasto della Casa</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p>Cured meats, cheeses, olives, and marinated vegetables</p>
+                        <div class="item-tags">
+                            <span class="tag">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasta -->
+                <div class="menu-item" data-category="pasta">
+                    <div class="item-image">
+                        <img src="images/spaghetti.jpg" alt="Pasta Carbonara">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Spaghetti Carbonara</h3>
+                            <span class="price">$22</span>
+                        </div>
+                        <p>Traditional Roman pasta with eggs, cheese, pancetta, and black pepper</p>
+                        <div class="item-tags">
+                            <span class="tag">House Favorite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pasta">
+                    <div class="item-image">
+                        <img src="images/lasagna.jpg" alt="Lasagna">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Lasagna della Nonna</h3>
+                            <span class="price">$24</span>
+                        </div>
+                        <p>Layered pasta with beef ragu, besciamella, and parmesan cheese</p>
+                        <div class="item-tags">
+                            <span class="tag">Family Recipe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-image">
+                        <img src="images/margerita.jpeg" alt="Margherita Pizza">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Pizza Margherita</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p>San Marzano tomatoes, fresh mozzarella, basil, and olive oil</p>
+                        <div class="item-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="images/tiramisu.jpeg" alt="Tiramisu">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$10</span>
+                        </div>
+                        <p>Layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                        <div class="item-tags">
+                            <span class="tag">Signature Dessert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Chefs</h2>
+                <p class="section-subtitle">The talented team behind our flavors</p>
+            </div>
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="images/chef.jpg" alt="Chef Marco Rossi">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Marco Rossi</h3>
+                        <p>Head Chef & Owner</p>
+                        <p class="chef-bio">Trained in Naples, brings 20 years of authentic Italian cooking experience.</p>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="images/sophia.webp" alt="Chef Sofia Conti">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Sofia Conti</h3>
+                        <p>Pastry Chef</p>
+                        <p class="chef-bio">Specialized in traditional Italian desserts from Sicily.</p>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="images/antonio.jpeg" alt="Chef Antonio Bianchi" height="100">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Antonio Bianchi</h3>
+                        <p>Pizza Chef</p>
+                        <p class="chef-bio">Master of Neapolitan pizza with 15 years of wood-fire experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-subtitle">Real experiences from our valued customers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best Italian food I've had outside of Italy! The pasta is absolutely incredible and the atmosphere is perfect."</p>
+                    <div class="client-info">
+                        <img src="images/client-1.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Food Critic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"We celebrated our anniversary here and the staff made it so special. The wine pairing was exceptional!"</p>
+                    <div class="client-info">
+                        <img src="images/client-2.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Regular Guest</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The tiramisu alone is worth the visit! Authentic flavors and beautiful presentation throughout."</p>
+                    <div class="client-info">
+                        <img src="images/client-3.jpg" alt="Emma Rodriguez">
+                        <div>
+                            <h4>Emma Rodriguez</h4>
+                            <p>Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Visit Us Today</h2>
+                    <p class="section-subtitle">We can't wait to welcome you</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Italian Way, New York, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon-Thu: 11:00 AM - 10:00 PM</p>
+                                <p>Fri-Sun: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Reservations</h4>
+                                <p>(555) 123-4567</p>
+                                <p>reservations@bellacucina.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Make a Reservation</h3>
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Cucina</h3>
+                    <p>Authentic Italian cuisine in the heart of the city. Family recipes, fresh ingredients, and unforgettable experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Italian Way, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bellacucina.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Cucina. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
